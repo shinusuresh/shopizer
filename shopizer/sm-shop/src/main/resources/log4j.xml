@@ -57,7 +57,7 @@
 
 <root>
 		<priority value="debug" />
-		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="CONSOLE,WEB,CORE" />
 </root>
        
 </log4j:configuration>

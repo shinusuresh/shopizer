@@ -1,0 +1,7 @@
+/bin/
+/.settings/
+**/.classpath
+/target/
+/infinispan/
+/SALESMANAGER.h2.db
+/SALESMANAGER.trace.db

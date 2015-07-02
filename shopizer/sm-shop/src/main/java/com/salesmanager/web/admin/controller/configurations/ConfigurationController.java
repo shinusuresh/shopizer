@@ -85,6 +85,16 @@ public class ConfigurationController {
 		configs.add(merchantGoogleApiConfiguration);
 		**/
 		
+		//Add Analytics 
+		MerchantConfiguration merchantSplunkAnalyticsConfiguration = merchantConfigurationService.getMerchantConfiguration(Constants.SPLUNK_ANALYTICS_HOST,store);
+		if(null == merchantSplunkAnalyticsConfiguration)
+		{
+			merchantSplunkAnalyticsConfiguration = new MerchantConfiguration();
+			merchantSplunkAnalyticsConfiguration.setKey(Constants.SPLUNK_ANALYTICS_HOST);
+			merchantSplunkAnalyticsConfiguration.setMerchantConfigurationType(MerchantConfigurationType.CONFIG);
+		}
+		configs.add(merchantSplunkAnalyticsConfiguration);
+		
 		MerchantConfiguration twitterConfiguration = merchantConfigurationService.getMerchantConfiguration(Constants.KEY_TWITTER_HANDLE,store);
 		if(null == twitterConfiguration)
 		{

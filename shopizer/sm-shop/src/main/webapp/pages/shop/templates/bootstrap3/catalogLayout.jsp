@@ -36,6 +36,9 @@ response.setDateHeader ("Expires", -1);
 				<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
 
                 <jsp:include page="/pages/shop/templates/bootstrap3/sections/shopLinks.jsp" />
+                
+                <!-- Test Splunk analytics tracking -->
+                <jsp:include page="/pages/shop/templates/bootstrap3/sections/analytics/splunk-tracking.jsp" />
  	</head>
  
  	<body>

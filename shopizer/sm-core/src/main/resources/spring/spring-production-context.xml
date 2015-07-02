@@ -8,7 +8,7 @@
    http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
    http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.1.xsd
-   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd" profile="development,default">
+   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd" profile="production">
 
 	<context:annotation-config />
 	<context:component-scan base-package="com.salesmanager.core.business" />
@@ -111,7 +111,7 @@
 		<property name="ignoreUnresolvablePlaceholders" value="false"/>
 		<property name="locations">
 			<list>
-		    	<value>classpath:database.properties</value>
+		    	<value>classpath:database.production.properties</value>
 				<value>classpath:email.properties</value>
 				<value>classpath:configs.properties</value>
 			</list>

@@ -90,6 +90,7 @@ public class Constants {
 	public final static String KEY_GOOGLE_ANALYTICS_URL = "google_analytics_url";
 	public final static String KEY_GOOGLE_API_KEY = "google_api_key";
 	public final static String KEY_TWITTER_HANDLE = "twitter_handle";
+	public final static String SPLUNK_ANALYTICS_HOST = "splunk_analytics_host";
 
 
 	public final static String CATEGORY_LINEAGE_DELIMITER = "/";

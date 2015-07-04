@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>shopizer</groupId>
 	<artifactId>shopizer</artifactId>
-	<packaging>war</packaging>
+	<packaging>pom</packaging>
 	<version>1.0</version>
 	<name>shopizer</name>
 	<repositories>
@@ -35,6 +35,14 @@
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
+	
+	<modules>
+  	<module>shopizer/sm-core</module>
+  	<module>shopizer/sm-core-model</module>
+  	<module>shopizer/sm-core-modules</module>
+  	<module>shopizer/sm-shop</module>
+  </modules>
+  
 	<dependencies>
 		<dependency>
 			<groupId>org.postgresql</groupId>
